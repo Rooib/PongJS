@@ -3,8 +3,9 @@ function Pong(x,y,r) {
   this.x = x;
   this.y = y;
   this.r = r;
-  this.xSpeed = random(-1,1) * 3;
-  this.ySpeed = random(5);
+  this.angle = random(TWO_PI);
+  this.xSpeed = 5 * cos(this.angle);
+  this.ySpeed = 5 * sin(this.angle);
   ellipse(this.x, this.y, this.r);
 
   this.update  = function() {
