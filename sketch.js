@@ -4,7 +4,7 @@ let padHeight = 100;
 let leftScore = 0;
 let rightScore = 0;
 
-let pong;
+let pong; //the ball
 let leftPad;
 let rightPad;
 
